@@ -1,0 +1,43 @@
+* {
+  /*border: 1px dashed red;*/
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya Sans SC";
+  box-sizing: border-box;
+  /*background-color: black;*/
+}
+
+/* NAV BAR */
+.nav-menu {
+  display: inline;
+  float: right;
+  font-size: 30px;
+  /*color: white;*/
+  margin-right: 20px;
+}
+
+/* WELCOME MESSAGE */
+#welcome {
+  font-size: 5em;
+  /*color: white;*/
+  text-align: center;
+}
+
+.welcome-message {
+  display: none;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+  body {
+    background-color: hotpink;
+  }
+
+  main {
+    width: 50%;
+  }
+}
