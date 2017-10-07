@@ -1,6 +1,7 @@
 $(document).ready(function() {
   welcomeMessage();
   menuHover();
+  menuShake();
 });
 
 const welcomeMessage = function() {
@@ -20,5 +21,11 @@ const menuHover = function() {
     $(this).addClass('hover');
   }, function() {
     $(this).removeClass('hover');
+  });
+}
+
+const menuShake = function() {
+  $('.nav-menu').on('click', function() {
+    $(this).effect('shake', {times: 3, distance: 2}, 200);
   });
 }
