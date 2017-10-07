@@ -3,6 +3,10 @@ $(document).ready(function() {
   menuHover();
   menuShake();
   menuHomeClick();
+  menuAboutClick();
+  menuSkillsClick();
+  menuProjectsClick();
+  menuContactClick();
 });
 
 const welcomeMessage = function() {
@@ -37,6 +41,38 @@ const menuHomeClick = function() {
   $('.home-button').on('click', function() {
     $('html, body').animate({
       scrollTop: 0
+    }, 500);
+  });
+}
+
+const menuAboutClick = function() {
+  $('.about-button').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('.about.section').offset().top - 45
+    }, 500);
+  });
+}
+
+const menuSkillsClick = function() {
+  $('.skills-button').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('.skills.section').offset().top - 45
+    }, 500);
+  });
+}
+
+const menuProjectsClick = function() {
+  $('.projects-button').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('.projects.section').offset().top - 45
+    }, 500);
+  });
+}
+
+const menuContactClick = function() {
+  $('.contact-button').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('.contact.section').offset().top - 45
     }, 500);
   });
 }
