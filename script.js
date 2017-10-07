@@ -2,6 +2,7 @@ $(document).ready(function() {
   welcomeMessage();
   menuHover();
   menuShake();
+  menuHomeClick();
 });
 
 const welcomeMessage = function() {
@@ -26,6 +27,16 @@ const menuHover = function() {
 
 const menuShake = function() {
   $('.nav-menu').on('click', function() {
-    $(this).effect('shake', {times: 3, distance: 2}, 200);
+    $(this).effect('shake', {
+      times: 3, distance: 2
+    }, 200);
+  });
+}
+
+const menuHomeClick = function() {
+  $('.home-button').on('click', function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
   });
 }
