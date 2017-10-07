@@ -1,26 +1,15 @@
-* {
-  /*border: 1px dashed red;*/
-}
-
 html, body {
   margin: 0;
   padding: 0;
   font-family: "Alegreya Sans SC";
   box-sizing: border-box;
-  /*background-color: black;*/
 }
 
 /* BACKGROUND IMAGE */
 #background-image {
-  z-index: -1;
+  margin-top: 45px;
   width: 100%;
   height: 90vh;
-  background-image: url('https://source.unsplash.com/5Ntkpxqt54Y');
-  background-attachment: fixed;
-  background-repeat: none;
-  background-size: cover;
-  position: relative;
-  top: 45px;
 }
 
 /* WELCOME MESSAGE */
@@ -35,38 +24,139 @@ html, body {
 }
 
 /* NAV BAR */
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  /*box-shadow: 0 4px 2px -2px #888888;*/
+  box-shadow: 3px 3px 2px #888888;
+}
+
 
 .nav-menu {
-  display: inline;
+  display: inline-block;
   float: right;
   font-size: 30px;
-  /*color: white;*/
   margin: 5px 25px 5px 0px;
+}
+
+.home {
+  float: left;
+  margin-left: 25px;
+}
+
+.hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* ABOUT */
+#portrait {
+  /*height: 400px;*/
+  width: 250px;
+  border-radius: 100%;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.about-text {
+  display: inline-block;
+}
+
+.about.container {
+  height: 450px;
+  margin-bottom: 50px;
+}
+
+.about.section {
+  background-color: #DCDCDC;
+}
+
+/* SKILLS */
+ .colored {
+  font-size: 100px;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #888888;
+ }
+
+/* PROJECTS */
+.project {
+  width: 350px;
+  display: inline-block;
+  margin: 20px 50px;
+  vertical-align: top;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.fa {
+  font-size: 25px;
+  color: black;
+  margin: 0px 10px;
+}
+
+.project-title {
+  font-size: 25px;
+}
+
+.project-description {
+  font-size: 17px;
+  font-family: "Alegreya Sans";
+}
+
+.project-stack {
+  font-size: 15px;
+  font-family: "Alegreya Sans";
+}
+
+.projects.section {
+  background-color: #DCDCDC;
+}
+
+/* CONTACT */
+.contact-info {
+  font-size: 40px;
+}
+
+/* GROUPED */
+.section {
+  padding: 0px 25px;
+}
+
+.header {
+  font-size: 40px;
+  text-shadow: 2px 2px 0px #888888;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
   text-align: center;
 }
 
 
-
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
-  /* BACKGROUND IMAGE */
+@media screen and (max-width: 600px) {
   #background-image {
-    position: relative;
-    top: 180px;
-    height: 75vh;
+    margin-top: 225px;
+    width: 100%;
+    height: 90vh;
   }
-
   /* WELCOME */
   #welcome {
     font-size: 3em;
   }
 
-
   /* NAV BAR */
   .nav-menu {
     width: 100%;
     font-size: 30px;
-    margin-right: 20px;
     text-align: center;
   }
 }

@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  welcomeListener();
-
+  welcomeMessage();
+  menuHover();
 });
 
-const welcomeListener = function() {
+const welcomeMessage = function() {
   $('#content').hide();
   $('.one, .two, .three, .four').each(function(divs) {
     $(this).delay(divs * 1500).fadeIn(2000, function() {
@@ -13,5 +13,12 @@ const welcomeListener = function() {
       });
     });
   });
+}
 
+const menuHover = function() {
+  $('.nav-menu').hover(function() {
+    $(this).addClass('hover');
+  }, function() {
+    $(this).removeClass('hover');
+  });
 }
