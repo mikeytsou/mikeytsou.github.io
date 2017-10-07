@@ -28,10 +28,8 @@ nav {
   position: fixed;
   width: 100%;
   background-color: white;
-  /*box-shadow: 0 4px 2px -2px #888888;*/
   box-shadow: 3px 3px 2px #888888;
 }
-
 
 .nav-menu {
   display: inline-block;
@@ -40,7 +38,7 @@ nav {
   margin: 5px 25px 5px 0px;
 }
 
-.home {
+.home-button {
   float: left;
   margin-left: 25px;
 }
@@ -52,18 +50,24 @@ nav {
 
 /* ABOUT */
 #portrait {
-  /*height: 400px;*/
   width: 250px;
-  border-radius: 100%;
+  border-radius: 50%;
+  margin: 0px 100px;
   box-shadow: 10px 10px 5px #888888;
 }
 
 .about-text {
   display: inline-block;
+  width: 50%;
+  font-family: "Alegreya Sans";
+  font-size: 20px;
+  font-weight: lighter;
+  vertical-align: top;
+  line-height: 50px;
 }
 
 .about.container {
-  height: 450px;
+  /*height: 450px;*/
   margin-bottom: 50px;
 }
 
@@ -127,6 +131,7 @@ nav {
 /* GROUPED */
 .section {
   padding: 0px 25px;
+  height: 100%;
 }
 
 .header {
@@ -136,19 +141,21 @@ nav {
 
 .container {
   width: 95%;
+  height: 100%;
   margin: auto;
   text-align: center;
 }
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+  /* BACKGROUND IMAGE */
   #background-image {
-    margin-top: 225px;
     width: 100%;
     height: 90vh;
   }
-  /* WELCOME */
+
+  /* WELCOME MESSAGE */
   #welcome {
     font-size: 3em;
   }
@@ -156,7 +163,19 @@ nav {
   /* NAV BAR */
   .nav-menu {
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+  }
+
+  /* ABOUT */
+  .about-text {
+    line-height: 30px;
+    width: 90%;
+  }
+
+
+  .section {
     text-align: center;
   }
 }
