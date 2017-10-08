@@ -24,7 +24,7 @@ const welcomeMessage = function() {
 }
 
 const imageSlider = function() {
-  let $active = $('#slider .active');
+  let $active = $('#slider > .active');
   let $next = $active.next().length > 0 ? $active.next() : $('#slider > .bg-image:first'); //if an element exists after 'active', set $next as the next element, else  set $next as the first element
   $next.css('z-index', 2); //move the next image up the pile
   $active.fadeOut(1500, function() { //fade out the top image

@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   font-family: "Alegreya Sans SC";
   box-sizing: border-box;
-  background: linear-gradient(to right, #D7DDE8, #757F9A);
+  background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 
 /* BACKGROUND IMAGE */
@@ -74,9 +74,11 @@ nav {
 /* ABOUT */
 #portrait {
   width: 250px;
+  height: 300px;
   border-radius: 50%;
   margin: 0px 100px;
   box-shadow: 10px 10px 5px #888888;
+  border: 2px solid black;
 }
 
 .about-text {
@@ -202,6 +204,11 @@ nav {
   .about-text {
     line-height: 30px;
     width: 90%;
+  }
+
+  /* PROJECTS */
+  .project {
+    width: 500px;
   }
 
   /* GROUPED */
