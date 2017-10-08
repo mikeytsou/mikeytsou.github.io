@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="images/favicon_mt.ico">
+  <link rel="stylesheet" type="application" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Alegreya+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +17,7 @@
 <body>
   <div id="welcome">
     <div class="welcome-message one">Hello!</div>
-    <div class="welcome-message two">My name is Mike Tsou</div>
+    <div class="welcome-message two">My name is <span class="name">Mike Tsou</span></div>
     <div class="welcome-message three">Welcome to my portfolio</div>
   </div> <!-- END OF WELCOME -->
 
@@ -28,7 +30,13 @@
       <div class="nav-menu about-button">About</div>
     </nav> <!-- END OF NAV -->
 
-    <img id="background-image" src="https://source.unsplash.com/5Ntkpxqt54Y" alt=""> <!-- END OF BACKGROUND -->
+    <div id="slider">
+      <img class="bg-image active" src="https://source.unsplash.com/5Ntkpxqt54Y" alt="">
+      <img class="bg-image" src="https://source.unsplash.com/m_HRfLhgABo" alt="">
+      <img class="bg-image" src="https://source.unsplash.com/fPkvU7RDmCo" alt="">
+      <img class="bg-image" src="https://source.unsplash.com/b18TRXc8UPQ" alt="">
+      <img class="bg-image" src="https://source.unsplash.com/OqtafYT5kTw" alt="">
+    </div> <!-- END OF BACKGROUND -->
 
     <div class="about section">
       <p class="about header">About</p>
@@ -56,11 +64,9 @@
         <i class="devicon-rails-plain-wordmark colored"></i>
         <i class="devicon-html5-plain-wordmark colored"></i>
         <i class="devicon-css3-plain-wordmark colored"></i>
-        <!-- <i class="devicon-sass-original colored"></i> -->
         <i class="devicon-bootstrap-plain-wordmark colored"></i>
         <i class="devicon-git-plain-wordmark colored"></i>
         <i class="devicon-github-plain-wordmark colored"></i>
-        <!-- <i class="devicon-trello-plain-wordmark colored"></i> -->
         <i class="devicon-heroku-plain-wordmark colored"></i>
         <i class="devicon-postgresql-plain-wordmark colored"></i>
         <i class="devicon-photoshop-plain colored"></i>
@@ -84,7 +90,7 @@
 
           <div class="links">
             <a href="https://github.com/mikeytsou/eFeedback" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://mysterious-lake-74928.herokuapp.com/" target="_blank"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <a href="https://mysterious-lake-74928.herokuapp.com" target="_blank"><i class="fa fa-play" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -93,12 +99,13 @@
 
           <p class="project-title">myBlogger</p>
 
-          <p class="project-description">MyBlogger is a web application that allows users to register and post blog entries about their daily lives. Users are encouraged to intereact with one another and comment of each others posts.</p>
+          <p class="project-description">MyBlogger is a web application that allows users to register and post blog entries about their daily lives. Users are encouraged to intereact with one another and comment on each others posts.</p>
 
-          <p class="project-stack">Tech Stack: Express, MongoDB, Mongoose, Passport, Quill, HTML5, CSS3, and JavaScript</p>
+          <p class="project-stack">Tech Stack: Express, MongoDB, Mongoose, Passport, Quill, HTML5, CSS3, SemanticUI, and JavaScript</p>
 
           <div class="links">
             <a href="https://github.com/mikeytsou/myBlogger" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://morning-cove-44536.herokuapp.com" target="_blank"><i class="fa fa-play" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -109,7 +116,7 @@
 
           <p class="project-description">RestfulTodo is a simple todo application that allows users to register, log in, and view their profile page with a list of their todos. With AJAX, users can create and delete their todos without refreshing the page or ever leaving their profile.</p>
 
-          <p class="project-stack">Tech Stack: Express, MongoDB, Mongoose, Passport, HTML5, CSS3, and JavaScript</p>
+          <p class="project-stack">Tech Stack: Express, MongoDB, Mongoose, Passport, HTML5, CSS3, SemanticUI, and JavaScript</p>
 
           <div class="links">
             <a href="https://github.com/mikeytsou/restfulTodo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -137,7 +144,7 @@
 
           <p class="project-description">YouTube clone that allows users to search for any YouTube video. Each keypress updates the search dynamically.</p>
 
-          <p class="project-stack">Tech Stack: React, YouTubeAPI, HTML5, CSS3, and JavaScript</p>
+          <p class="project-stack">Tech Stack: React, YouTubeAPI, HTML5, CSS3, Bootstrap, and JavaScript</p>
 
           <div class="links">
             <a href="https://github.com/mikeytsou/youtubeCloneReact" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -151,7 +158,7 @@
 
           <p class="project-description">CampGrounds is a web application that allows users to post reviews on camp sites and comment on other users reviews.</p>
 
-          <p class="project-stack">Tech Stack: Express, MongoDB, Mongoose, Passport, GoogleMapsAPI, HTML5, CSS3, and JavaScript</p>
+          <p class="project-stack">Tech Stack: Express, MongoDB, Mongoose, Passport, GoogleMapsAPI, HTML5, CSS3, Bootstrap, and JavaScript</p>
 
           <div class="links">
             <a href="https://github.com/mikeytsou/campGrounds" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -180,11 +187,11 @@
 
           <p class="project-description">Crabalicious Films is a web application that allows users to rate and review films, comment on other users reviews, and sort films by categories.</p>
 
-          <p class="project-stack">Tech Stack: RubyonRails, PostgreSQL, Bootstrap, HTML5, CSS3, and JavaScript</p>
+          <p class="project-stack">Tech Stack: RubyonRails, PostgreSQL, HTML5, CSS3, Bootstrap, and JavaScript</p>
 
           <div class="links">
             <a href="https://github.com/mikeytsou/dbc-client-project" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://cryptic-plains-35196.herokuapp.com/" target="_blank"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <a href="https://cryptic-plains-35196.herokuapp.com" target="_blank"><i class="fa fa-play" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -193,7 +200,7 @@
 
           <p class="project-title">purchaseForm</p>
 
-          <p class="project-description">A purchase form that uses JSON data to populate the product selection fields</p>
+          <p class="project-description">A purchase form that uses JSON data to populate the "product selection" fields.</p>
 
           <p class="project-stack">Tech Stack: HTML5, CSS3, SemanticUI, and JavaScript</p>
 
@@ -211,7 +218,7 @@
         <a href="https://www.linkedin.com/in/miketsou" target="_blank"><i class="fa fa-linkedin-square contact-info" aria-hidden="true"></i></a>
         <a href="https://github.com/mikeytsou" target="_blank"><i class="fa fa-github-square contact-info" aria-hidden="true"></i></a>
         <a href="https://twitter.com/miketsou" target="_blank"><i class="fa fa-twitter-square contact-info" aria-hidden="true"></i></a>
-        <a href="mailto:mikeytsou@gmail.com" target="_blank"><i class="fa fa-envelope-square contact-info" aria-hidden="true"></i></a>
+        <a href="mailto:mikeytsou@gmail.com"><i class="fa fa-envelope-square contact-info" aria-hidden="true"></i></a>
         <a href="images/resume_miketsou.pdf" target="_blank"><i class="fa fa-id-card contact-info" aria-hidden="true"></i></a>
         <p>Copyright © 2017. Portfolio of Mike Tsou.</p>
       </div>
