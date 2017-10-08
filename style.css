@@ -6,10 +6,22 @@ html, body {
 }
 
 /* BACKGROUND IMAGE */
-#background-image {
-  margin-top: 45px;
+#slider {
+  padding-top: 45px;
   width: 100%;
   height: 90vh;
+}
+
+#slider .bg-image {
+  width: 100%;
+  height: 90vh;
+  box-shadow: 3px 3px 2px #888888;
+  position: absolute;
+  z-index: 1;
+}
+
+#slider .bg-image .active {
+  z-index: 3;
 }
 
 /* WELCOME MESSAGE */
@@ -29,6 +41,7 @@ nav {
   width: 100%;
   background-color: white;
   box-shadow: 3px 3px 2px #888888;
+  z-index: 4;
 }
 
 .nav-menu {
@@ -67,7 +80,6 @@ nav {
 }
 
 .about.container {
-  /*height: 450px;*/
   margin-bottom: 50px;
 }
 
@@ -76,14 +88,18 @@ nav {
 }
 
 /* SKILLS */
- .colored {
+.colored {
   font-size: 100px;
   margin: 20px;
   padding: 20px;
   display: inline-block;
   border-radius: 50px;
   box-shadow: 10px 10px 5px #888888;
- }
+}
+
+.skills.container {
+  margin-bottom: 50px;
+}
 
 /* PROJECTS */
 .project {
@@ -123,6 +139,10 @@ nav {
   background-color: #DCDCDC;
 }
 
+.projects.container {
+  margin-bottom: 50px;
+}
+
 /* CONTACT */
 .contact-info {
   font-size: 40px;
@@ -132,6 +152,7 @@ nav {
 .section {
   padding: 0px 25px;
   height: 100%;
+  box-shadow: 3px 3px 2px #888888;
 }
 
 .header {
@@ -146,11 +167,10 @@ nav {
   text-align: center;
 }
 
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 750px) {
   /* BACKGROUND IMAGE */
-  #background-image {
+  .bg-image {
     width: 100%;
     height: 90vh;
   }
@@ -174,7 +194,7 @@ nav {
     width: 90%;
   }
 
-
+  /* GROUPED */
   .section {
     text-align: center;
   }

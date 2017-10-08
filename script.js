@@ -1,5 +1,6 @@
 $(document).ready(function() {
   welcomeMessage();
+  setInterval('imageSlider()', 7000);
   menuHover();
   menuShake();
   menuHomeClick();
@@ -18,6 +19,16 @@ const welcomeMessage = function() {
         $('#content').fadeIn(1000);
       });
     });
+  });
+}
+
+const imageSlider = function() {
+  let $active = $('#slider .active');
+  let $next = $active.next().length > 0 ? $active.next() : $('#slider > .bg-image:first');
+  $next.css('z-index', 2);
+  $active.fadeOut(1500, function() {
+    $active.css('z-index', 1).fadeIn(1500).removeClass('active');
+    $next.css('z-index', 3).addClass('active');
   });
 }
 
