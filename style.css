@@ -190,6 +190,11 @@ nav {
   /* WELCOME MESSAGE */
   #welcome {
     font-size: 3em;
+    letter-spacing: 3px;
+  }
+
+  .welcome-message {
+    margin: 30px;
   }
 
   /* NAV BAR */
@@ -201,6 +206,10 @@ nav {
   }
 
   /* ABOUT */
+  #portrait {
+    margin: 0;
+  }
+
   .about-text {
     line-height: 30px;
     width: 90%;
@@ -209,11 +218,13 @@ nav {
   /* PROJECTS */
   .project {
     width: 400px;
+    margin: auto;
   }
 
   /* GROUPED */
   .section {
     width: 100%;
+    padding: 0;
     text-align: center;
   }
 }
