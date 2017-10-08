@@ -13,7 +13,7 @@ $(document).ready(function() {
 const welcomeMessage = function() {
   $('#content').hide();
   $('.one, .two, .three').each(function(msg) {
-    $(this).delay(msg * 1500).fadeIn(2000, function() {
+    $(this).delay(msg * 1000).fadeIn(2000, function() {
       $('#welcome').delay(1000).fadeOut(2000, function() {
         $('html, body').css("background", "white");
         $('#welcome').remove();

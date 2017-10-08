@@ -30,11 +30,19 @@ html, body {
   font-size: 5em;
   text-align: center;
   height: 100%;
+  letter-spacing: 5px;
 }
 
 .welcome-message {
   display: none;
   margin: 50px;
+  text-shadow: 4px 4px 2px #888888;
+}
+
+.welcome-message > .name {
+  font-size: 150%;
+  font-weight: bolder;
+  text-shadow: 8px 8px 4px #888888;
 }
 
 /* NAV BAR */
