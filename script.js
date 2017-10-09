@@ -8,6 +8,8 @@ $(document).ready(function() {
   menuSkillsClick();
   menuProjectsClick();
   menuContactClick();
+  menuHamburger();
+  menuDisplay();
 });
 
 const welcomeMessage = function() {
@@ -61,7 +63,7 @@ const menuAboutClick = function() {
   $('.about-button').on('click', function() {
     if (window.matchMedia('(max-width: 750px)').matches) {
       $('html, body').animate({
-        scrollTop: $('.about.section').offset().top - 115
+        scrollTop: $('.about.section').offset().top - 143
       }, 500);
     } else {
       $('html, body').animate({
@@ -75,7 +77,7 @@ const menuSkillsClick = function() {
   $('.skills-button').on('click', function() {
     if (window.matchMedia('(max-width: 750px)').matches) {
       $('html, body').animate({
-        scrollTop: $('.skills.section').offset().top - 115
+        scrollTop: $('.skills.section').offset().top - 143
       }, 500);
     } else {
       $('html, body').animate({
@@ -89,7 +91,7 @@ const menuProjectsClick = function() {
   $('.projects-button').on('click', function() {
     if (window.matchMedia('(max-width: 750px)').matches) {
       $('html, body').animate({
-        scrollTop: $('.projects.section').offset().top - 115
+        scrollTop: $('.projects.section').offset().top - 143
       }, 500);
     } else {
       $('html, body').animate({
@@ -103,12 +105,29 @@ const menuContactClick = function() {
   $('.contact-button').on('click', function() {
     if (window.matchMedia('(max-width: 750px)').matches) {
       $('html, body').animate({
-        scrollTop: $('.contact.section').offset().top - 115
+        scrollTop: $('.contact.section').offset().top - 143
       }, 500);
     } else {
       $('html, body').animate({
         scrollTop: $('.contact.section').offset().top - 45
       }, 500);
+    }
+  });
+}
+
+const menuHamburger = function() {
+  $('.hamburger').on('click', function() {
+    $('#web-menu').slideToggle('slow');
+  });
+}
+
+const menuDisplay = function() {
+  $(window).resize(function() {
+    if (window.matchMedia('(max-width: 750px)').matches) {
+      $('#web-menu').hide();
+      $('.hamburger').show();
+    } else {
+      $('#web-menu').show();
     }
   });
 }
