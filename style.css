@@ -6,7 +6,6 @@ html, body {
   background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 
-
 /* WELCOME MESSAGE */
 #welcome {
   font-size: 5em;
@@ -56,7 +55,7 @@ nav {
 }
 
 .nav-menu {
-  display: inline-block;
+  display: inline-block !important;
   float: right;
   font-size: 30px;
   margin: 5px 25px 5px 0px;
@@ -70,6 +69,10 @@ nav {
 .hover {
   font-weight: bolder;
   text-decoration: underline;
+}
+
+.hamburger {
+  display: none !important;
 }
 
 /* ABOUT */
@@ -208,6 +211,14 @@ nav {
     font-size: 20px;
     text-align: center;
     margin: auto;
+  }
+
+  #web-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block !important;
   }
 
   /* ABOUT */
