@@ -1,0 +1,261 @@
+@import "variables";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+/* WELCOME MESSAGE */
+#welcome {
+  font-size: 5em;
+  text-align: center;
+  height: 100%;
+  letter-spacing: 5px;
+
+  .welcome-message {
+    display: none;
+    margin: 50px;
+    text-shadow: 4px 4px 2px #888888;
+  }
+
+  .name {
+    font-size: 150%;
+    font-weight: bolder;
+    text-shadow: 8px 8px 4px #888888;
+  }
+}
+
+/* BACKGROUND IMAGE */
+#slider {
+  padding-top: 45px;
+  width: 100%;
+  height: 90vh;
+
+  .bg-image {
+    width: 100%;
+    height: 90vh;
+    box-shadow: $section-shadow;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .active {
+    z-index: 3;
+  }
+}
+
+/* NAV BAR */
+#navigation {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: $section-shadow;
+  z-index: 4;
+
+  .nav-menu {
+    display: inline-block !important;
+    float: right;
+    font-size: 30px;
+    margin: 5px 25px 5px 0px;
+  }
+
+  .home-button {
+    float: left;
+    margin-left: 25px;
+  }
+
+  .hover {
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* ABOUT */
+.about.section {
+  background-color: $section-bg-color;
+
+  .about.container {
+    margin-bottom: 50px;
+  }
+
+  #portrait {
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 0px 100px;
+    box-shadow: $obj-shadow;
+    border: 2px solid black;
+  }
+
+  .about-text {
+    display: inline-block;
+    width: 50%;
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: lighter;
+    vertical-align: top;
+    line-height: 50px;
+  }
+}
+
+/* SKILLS */
+.skills.container {
+  margin-bottom: 50px;
+
+  .colored {
+    font-size: 100px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    box-shadow: $obj-shadow;
+  }
+}
+
+/* PROJECTS */
+.projects.section {
+  background-color: $section-bg-color;
+
+  .projects.container {
+    margin-bottom: 50px;
+
+    .project {
+      width: 350px;
+      display: inline-block;
+      margin: 20px 50px;
+      vertical-align: top;
+    }
+
+    .project-image {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: $obj-shadow;
+    }
+
+    .project-title {
+      font-size: 25px;
+    }
+
+    .project-description {
+      font-size: 17px;
+      font-family: $secondary-font
+    }
+
+    .project-stack {
+      font-size: 15px;
+      font-family: $secondary-font
+    }
+
+    .fa {
+      font-size: 25px;
+      color: black;
+      margin: 0px 10px;
+    }
+  }
+}
+
+/* CONTACT */
+.contact-info {
+  font-size: 40px;
+  color: black;
+  margin: 0px 10px;
+}
+
+/* GROUPED */
+.section {
+  padding: 0px 25px;
+  height: 100%;
+  box-shadow: $section-shadow;
+
+}
+
+.header {
+  font-size: 40px;
+  text-shadow: 2px 2px 0px #888888;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 750px) {
+  /* WELCOME MESSAGE */
+  #welcome {
+    font-size: 3em;
+    letter-spacing: 3px;
+
+    .welcome-message {
+      margin: 30px;
+    }
+  }
+
+  /* BACKGROUND IMAGE */
+  #slider {
+    width: 100%;
+
+    .bg-image {
+      width: 100%;
+      height: 90vh;
+    }
+  }
+
+
+  /* NAV BAR */
+  #navigation {
+    .hamburger {
+      display: inline-block !important;
+    }
+
+    .nav-menu {
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      margin: auto;
+    }
+
+    #web-menu {
+      display: none;
+    }
+  }
+
+  /* ABOUT */
+  .about.container {
+    #portrait {
+      margin: 0;
+    }
+
+    .about-text {
+      line-height: 30px;
+      width: 90%;
+    }
+  }
+
+  /* PROJECTS */
+  .project {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* GROUPED */
+  .section {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+}
