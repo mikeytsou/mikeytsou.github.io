@@ -166,7 +166,7 @@ html, body {
 
   /* ABOUT */
   .about.container #portrait {
-    width: 90%;
+    width: 50%;
     margin: auto; }
   .about.container .about-text {
     line-height: 30px;
@@ -174,7 +174,7 @@ html, body {
 
   /* PROJECTS */
   .projects.section .projects.container .project {
-    width: 90%;
+    width: 70%;
     margin: auto; }
 
   /* GROUPED */
