@@ -210,7 +210,6 @@ html, body {
     }
   }
 
-
   /* NAV BAR */
   #navigation {
     .hamburger {
@@ -232,7 +231,8 @@ html, body {
   /* ABOUT */
   .about.container {
     #portrait {
-      margin: 0;
+      width: 90%;
+      margin: auto;
     }
 
     .about-text {
@@ -242,9 +242,13 @@ html, body {
   }
 
   /* PROJECTS */
-  .project {
-    width: 90%;
-    margin: auto;
+  .projects.section {
+    .projects.container {
+      .project {
+        width: 90%;
+        margin: auto;
+      }
+    }
   }
 
   /* GROUPED */
