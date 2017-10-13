@@ -166,13 +166,14 @@ html, body {
 
   /* ABOUT */
   .about.container #portrait {
-    margin: 0; }
+    width: 90%;
+    margin: auto; }
   .about.container .about-text {
     line-height: 30px;
     width: 90%; }
 
   /* PROJECTS */
-  .project {
+  .projects.section .projects.container .project {
     width: 90%;
     margin: auto; }
 
