@@ -10,6 +10,8 @@ html, body {
 
 /* WELCOME MESSAGE */
 #welcome {
+  display: flex;
+  flex-direction: column;
   font-size: 5em;
   text-align: center;
   height: 100%;
